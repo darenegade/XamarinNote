@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using Geolocator.Plugin;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,6 +18,9 @@ namespace Todo
 
             #region toolbar
             ToolbarItem tbi = null;
+
+			ToolbarItem test = new ToolbarItem("X", "start", ()=> perfTest(), 0, 0);
+
             if (Device.OS == TargetPlatform.iOS)
             {
                 tbi = new ToolbarItem("+", null, () =>
@@ -39,6 +43,7 @@ namespace Todo
             }
 
             ToolbarItems.Add(tbi);
+			ToolbarItems.Add(test);
             #endregion
         }
 
@@ -61,5 +66,48 @@ namespace Todo
 
             Navigation.PushAsync(todoPage);
         }
+
+		async Task perfTest()
+		{
+			var watch = System.Diagnostics.Stopwatch.StartNew();
+
+			int count = 10000;
+			Random randNum = new Random();
+			int[] arr = Enumerable
+				.Repeat(0, count)
+				.Select(i => randNum.Next())
+				.ToArray();
+
+			int temp = 0;
+
+			for (int write = 0; write < arr.Length; write++)
+			{
+				for (int sort = 0; sort < arr.Length - 1; sort++)
+				{
+					if (arr[sort] > arr[sort + 1])
+					{
+						temp = arr[sort + 1];
+						arr[sort + 1] = arr[sort];
+						arr[sort] = temp;
+					}
+				}
+			}
+
+			TodoItem[] items = new TodoItem[count];
+			for (int i = 0; i < count; i++)
+			{
+				items[i] = new TodoItem();
+				items[i].Lat = 0;
+				items[i].Long = 0;
+				items[i].Name = "PerfTest";
+				items[i].ID = App.Database.SaveItem(items[i]);
+			}
+
+			foreach (TodoItem item in App.Database.GetItemsByName("PerfTest"))
+				App.Database.DeleteItem(item.ID);
+
+			watch.Stop();
+			await DisplayAlert("Finished", "Done for " + count + " Elements after: " + watch.ElapsedMilliseconds +"ms", "OK");
+		}
     }
 }

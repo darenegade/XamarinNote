@@ -1,0 +1,16 @@
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/obj/Release/.NETPortable,Version=v4.5,Profile=Profile259.AssemblyAttribute.cs
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/obj/Release/Todo.Views.TodoItemPageX.xaml
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/obj/Release/Todo.Views.TodoItemListX.xaml
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/obj/Release/Todo.Views.TodoItemPageX.xaml.g.cs
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/obj/Release/Todo.Views.TodoItemListX.xaml.g.cs
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/bin/Release/QuickTodo.dll.mdb
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/bin/Release/QuickTodo.dll
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/obj/Release/QuickTodo.dll
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/obj/Release/QuickTodo.dll.mdb
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/bin/Release/SQLite-net.dll
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/bin/Release/Xamarin.Forms.Core.dll
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/bin/Release/Xamarin.Forms.Xaml.dll
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/bin/Release/Xamarin.Forms.Platform.dll
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/bin/Release/SQLitePCL.raw.dll
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/bin/Release/Geolocator.Plugin.dll
+/Users/darenegade/Documents/IntelliJ/XamarinNote/Todo/bin/Release/Geolocator.Plugin.Abstractions.dll

@@ -40,6 +40,14 @@ namespace Todo
 			}
 		}
 
+		public IEnumerable<TodoItem> GetItemsByName(String name)
+		{
+			lock (locker)
+			{
+				return database.Query<TodoItem>("SELECT * FROM [TodoItem] WHERE [Name] = \"" + name+"\"");
+			}
+		}
+
 		public TodoItem GetItem (int id) 
 		{
 			lock (locker) {

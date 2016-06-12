@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Todo.Android/Todo.Android.csproj">
+  <MonoDevelop.Ide.ItemProperties.Targets.Todo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.35C70534-1D95-47A8-939F-ECE4305144D6" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Todo/Data/TodoItemDatabase.cs">
+    <Files>
+      <File FileName="Todo/Views/TodoItemListX.xaml" Line="21" Column="52" />
+      <File FileName="Todo/Views/TodoItemListX.xaml.cs" Line="106" Column="52" />
+      <File FileName="Todo.iOS/Main.cs" Line="16" Column="1" />
+      <File FileName="Todo/Views/TodoItemPageX.xaml.cs" Line="28" Column="4" />
+      <File FileName="Todo/Data/TodoItemDatabase.cs" Line="43" Column="59" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Targets.Todo.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5_API_23" />
+</Properties>

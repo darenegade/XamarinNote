@@ -109,6 +109,7 @@
     <AndroidResource Include="Resources\drawable\plus.png" />
     <AndroidResource Include="Resources\drawable\check2x.png" />
     <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable\start.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Todo\Todo.csproj">
